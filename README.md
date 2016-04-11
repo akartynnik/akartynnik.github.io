@@ -1,3 +1,3 @@
 # akartynnik.github.io
-Aliaksei Kartynnik | personal page
+Aliaksei Kartynnik | Minsk, Belarus | ASP.NET Developer | personal page
  
