@@ -9,10 +9,9 @@ span{
 }
 
 img{
-	border: 6px solid #ddd;
-    border-radius: 40px;
-    margin: 10px 15px 0 0;
-    width: 70px;
+	width: 70px;
+	border-radius: 35px;
+	margin: 10px 15px 0 0;
 }
 
 table {
