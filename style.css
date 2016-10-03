@@ -4,25 +4,13 @@ body {
 	color: #333;
 }
 
-.content {
-	max-width: 600px;
-	margin: 0 auto;
-}
-
-.intro {
-	margin: 150px 0 90px 0;
-	text-align: center;
-}
-
-.intro span {
-	display: block;
-	margin-bottom: 10px;
-	font-size: 22px;
+span{
+	font-size: 14px;
 }
 
 img{
 	width: 70px;
-	border-radius: 5px;
+	border-radius: 35px;
 	margin: 10px 15px 0 0;
 }
 
@@ -38,15 +26,44 @@ table tr td:first-child {
 a {
 	text-decoration: none;
 	color: #000;
+	font-weight: bold;
+	transition: 0.3s;
 }
 
 a:hover {
-	border-bottom: 1px dotted green;
-	color: green;
+	color: #1A6DBB;
+	transition: 0.3s;
 }
 
-span{
-	font-size: 14px;
+::-moz-selection {
+	color: white; 
+	background: #1A6DBB;
+}
+
+::selection {
+	color: white; 
+	background: #1A6DBB;
+}
+
+.content {
+	max-width: 600px;
+	margin: 0 auto;
+}
+
+.intro {
+	margin: 150px 0 90px 0;
+	text-align: center;
+}
+
+.intro span {
+	margin-bottom: 10px;
+	font-size: 22px;
+	line-height: 40px;
+}
+
+.intro span.highlight {
+	background-color: #333;
+	color: white;
 }
 
 @media (max-width: 360px) {
@@ -56,6 +73,7 @@ span{
 	
 	.intro span {
 		font-size: 18px;
+		line-height: 28px;
 	}
 	
 	img{
