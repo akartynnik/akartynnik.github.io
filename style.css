@@ -71,7 +71,7 @@ a:hover {
 	color: white;
 }
 
-.intro span.highlight-red a:hover {
+.intro span.highlight-red:hover {
 	background-color: red;
 	color: white;
 	transition: 0.3s;
