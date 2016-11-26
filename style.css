@@ -35,6 +35,10 @@ a:hover {
 	transition: 0.3s;
 }
 
+a:mouseover {
+	transition: 0.3s;
+}
+
 ::-moz-selection {
 	color: white; 
 	background: #1A6DBB;
@@ -74,6 +78,10 @@ a:hover {
 .intro span.highlight-red:hover {
 	background-color: red;
 	color: white;
+	transition: 0.3s;
+}
+
+.intro span.highlight-red:mouseover {
 	transition: 0.3s;
 }
 
