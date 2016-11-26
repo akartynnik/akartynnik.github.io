@@ -71,6 +71,12 @@ a:hover {
 	color: white;
 }
 
+.intro span.highlight-red a:hover {
+	background-color: red;
+	color: white;
+	transition: 0.3s;
+}
+
 @media (max-width: 360px) {
 	.intro {
 		margin: 50px 0 50px 0;
