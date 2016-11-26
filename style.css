@@ -6,6 +6,9 @@ body {
 
 span{
 	font-size: 14px;
+	color: #000;
+	font-weight: bold;
+	transition: 0.3s;
 }
 
 img{
@@ -32,10 +35,6 @@ a {
 
 a:hover {
 	color: #1A6DBB;
-	transition: 0.3s;
-}
-
-a:mouseover {
 	transition: 0.3s;
 }
 
@@ -73,15 +72,12 @@ a:mouseover {
 .intro span.highlight-red {
 	background-color: darkred;
 	color: white;
+	transition: 0.3s;
 }
 
 .intro span.highlight-red:hover {
 	background-color: red;
 	color: white;
-	transition: 0.3s;
-}
-
-.intro span.highlight-red:mouseover {
 	transition: 0.3s;
 }
 
