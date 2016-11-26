@@ -66,6 +66,11 @@ a:hover {
 	color: white;
 }
 
+.intro span.highlight-red {
+	background-color: darkred;
+	color: white;
+}
+
 @media (max-width: 360px) {
 	.intro {
 		margin: 50px 0 50px 0;
