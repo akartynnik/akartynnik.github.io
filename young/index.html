@@ -1,0 +1,222 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
+<meta http-equiv="content-language" content="ru">
+<title>Быстро. Стильно. Превосходно. Веб-студия Алексея Картынника</title>
+<META NAME="DESCRIPTION" CONTENT="Верстка и разработка сайтов HTML + CSS. Настройки CMS. Дизайн сайтов. Веб-студия Алексея Картынника. Быстро. Стильно. Превосходно.">
+<META NAME="KEYWORDS" CONTENT="верстка, дизайн, web, html, css, html5, css3, web-art, LeX_K@R, LeX_KaR, LeXKaR, lex_kar_008@tut.by, Минск, Беларусь, сайт, сайтостроительство, фрилансер, суппер, порно, xxx, порнуха, секс, дойки, веб-студия, бесплатно, халява, php, jquerty, www, freelancer, стильно, быстро, превосходно, fast, stylish, superb, Быстро.Стильно.Превосходно.">
+<META NAME="DOCUMENT-STATE" CONTENT="DYNAMIC">
+<META NAME="revizit-after" CONTENT="7 days">
+<META NAME="ROBOTS" CONTENT="all">
+<META Name="Author" Lang="ru" content="Алексей Картынник"/>
+
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="stylesheet" type="text/css" href="styles.css" />
+
+<script type="text/javascript" src="js/jquery-1.2.6.min.js"></script>
+<script type="text/javascript" src="js/jquery-easing-1.3.pack.js"></script>
+<script type="text/javascript" src="js/jquery-easing-compatibility.1.2.pack.js"></script>
+<script type="text/javascript" src="js/coda-slider.1.1.1.pack.js"></script>
+<script type="text/javascript">
+	
+		var theInt = null;
+		var $crosslink, $navthumb;
+		var curclicked = 0;
+		
+		theInterval = function(cur){
+			clearInterval(theInt);
+			
+			if( typeof cur != 'undefined' )
+				curclicked = cur;
+			
+			$crosslink.removeClass("active-thumb");
+			$navthumb.eq(curclicked).parent().addClass("active-thumb");
+				$(".stripNav ul li a").eq(curclicked).trigger('click');
+			
+			theInt = setInterval(function(){
+				$crosslink.removeClass("active-thumb");
+				$navthumb.eq(curclicked).parent().addClass("active-thumb");
+				$(".stripNav ul li a").eq(curclicked).trigger('click');
+				curclicked++;
+				if( 6 == curclicked )
+					curclicked = 0;
+				
+			}, 3000);
+		};
+		
+		$(function(){
+			
+			$("#main-photo-slider").codaSlider();
+			
+			$navthumb = $(".nav-thumb");
+			$crosslink = $(".cross-link");
+			
+			$navthumb
+			.click(function() {
+				var $this = $(this);
+				theInterval($this.parent().attr('href').slice(1) - 1);
+				return false;
+			});
+			
+			theInterval();
+		});
+	</script>
+		<!--[if lt IE 7]>
+			<style>
+				.cn{
+					filter: expression(fixPNG(this));
+				}
+			</style>
+			<script type="text/javascript" src="ie6-fix.js"></script>
+		<![endif]-->
+</head>
+<body>
+
+<div id="kvadrat">
+
+
+
+<div id="slogan">
+
+<div class="textik">
+<span title="убедитесь - это так!">Быстро. Стильно. Превосходно.</span> <span style="font-size: 10pt; float: right; padding: 0 15px 0 0;">
+<a href="index.html" title="По-русски"><b><i>ru</i></b></a>
+&nbsp<a href="index_by.html" title="Па-беларуску">by</a>
+&nbsp<a href="index_eng.html" title="English">eng</a></span>
+</div>
+
+
+
+<div class="textik2">
+<a href="mailto:lex_kar_008@tut.by" title="e-mail по-простому">Электропочта</a>
+</div>
+
+</div><br /><br />
+
+
+<table ALIGN=center WIDTH="96%">
+<tr>
+<td valign="top">
+<div class="bio">
+			<div class="r-star-shape">
+				<div class="cn tl"></div>
+				<div class="cn tr"></div>
+			
+				<div class="content">
+&nbsp Это веб-студия Алексея Картынника. <br />
+&nbspЕсли вы нуждаетесь в моих услугах, просто кликните по ссылке "Электропочта".<br />
+&nbspТак же вы можете найти меня в Skype и ICQ:<br />
+&nbsp &nbsp ~ lex-kar-008<br />
+&nbsp &nbsp ~ 367-725-710 <br />
+<img src="images/bio.jpg" class="rightimg" title="Алексей Картынник"  /> <br /><br />
+С уважением, Алексей.<br /><br /><br />
+				</div>
+				
+				<div class="cn bl"></div>
+				<div class="cn br"></div>
+			</div>
+		</div>
+</td>
+
+<td>
+	<div class="bodyn">
+	<div id="page-wrap">
+											
+	<div class="slider-wrap">
+		<div id="main-photo-slider" class="csw">
+			<div class="panelContainer">
+
+				<div class="panel" title="Rakov.info">
+					<div class="wrapper">
+						<img src="images/1.jpg" alt="temp" />
+						<div class="photo-meta-data">
+							Мой первый сайт: <a href="http://freelance.ru/users/LeX_KaR/" target="new">Rakov.info</a><br />
+							<span>Задача: дизайн и настройка WordPress</span>
+						</div>
+					</div>
+				</div>
+				<div class="panel" title="Fiz-profburo.net">
+<div class="wrapper">
+						<img src="images/7.jpg" alt="temp" />
+						<div class="photo-meta-data">
+							Сайт профсоюза: <a href="http://fiz-profburo.net" target="new">Fiz-profburo.net</a><br />
+							<span>Задача: написание простой CMS</span>
+						</div>
+					</div>
+				</div>	
+	
+				<div class="panel" title="Panel 3">
+					<div class="wrapper">
+						<img src="images/3.jpg" alt="temp" />
+						<div class="photo-meta-data">
+							Анонимайзер: <a href="http://anoby.comuf.com/" target="new">Anoby</a><br />
+							<span>Задача: нарисовать и сверстать стиль под произвольный скрипт</span>
+						</div>
+					</div>
+				</div>
+				<div class="panel" title="Panel 4">
+					<div class="wrapper">
+						<img src="images/2.jpg" alt="temp" />
+						<div class="photo-meta-data">
+							Форум: <a href="http://freelance.ru/users/LeX_KaR/" target="new">BEL-forum.COM</a><br />
+							<span>Задача: настройка и дизайн форума phpBB3</span>
+						</div>
+					</div>
+				</div>
+				<div class="panel" title="Panel 5">
+					<div class="wrapper">
+						<img src="images/8.jpg" alt="temp" />
+						<div class="photo-meta-data">
+							Krump-федерация: <a href="http://krump.by/" target="new">Krump.by</a><br />
+							<span>Задача: написание простой CMS</span>
+						</div>
+					</div>
+				</div>
+				<div class="panel" title="Panel 6">
+					<div class="wrapper">
+						<img src="images/6.jpg" alt="temp" />
+						<div class="photo-meta-data">
+							Библиотека: <a href="http://physlib.comule.com/" target="new">PhysLib</a><br />
+							<span>Задача: создание электронной библиотеки на базе MediaWiki</span>
+						</div>
+					</div>
+				</div>
+
+				
+			</div>
+		</div>
+
+		<a href="#1" class="cross-link active-thumb"><img src="images/thumb_1.jpg" class="nav-thumb" alt="temp-thumb" /></a>
+		<div id="movers-row">
+			<div><a href="#2" class="cross-link"><img src="images/thumb_7.jpg" class="nav-thumb" alt="temp-thumb" /></a></div>
+			<div><a href="#3" class="cross-link"><img src="images/thumb_3.jpg" class="nav-thumb" alt="temp-thumb" /></a></div>
+			<div><a href="#4" class="cross-link"><img src="images/thumb_2.jpg" class="nav-thumb" alt="temp-thumb" /></a></div>
+			<div><a href="#5" class="cross-link"><img src="images/thumb_8.jpg" class="nav-thumb" alt="temp-thumb" /></a></div>
+			<div><a href="#6" class="cross-link"><img src="images/thumb_6.jpg" class="nav-thumb" alt="temp-thumb" /></a></div>
+		</div>
+
+	</div>
+	
+	</div>
+</div>
+</td>
+</tr>
+</table><br />
+
+<div id="footer-content">
+<div class="col float-left">
+<div class="textik">
+<strong>Веб-студия <a href="http://vkontakte.ru/lex_kar" title="Алексей Вконтакте" target="new">Алексея Картынника</a> (LeX_K@R)</strong>
+</div></div>
+<div class="col2 float-right">
+<div class="textik">
+© 2010  <a href="http://lex-kar.info" title="Быстро.Стильно.Превосходно."><strong>lex-kar.info</strong></a>
+</div></div>
+</div>
+
+</div>
+
+</body>
+</html>

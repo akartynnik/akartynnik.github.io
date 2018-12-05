@@ -1,0 +1,205 @@
+body {
+	background-image:url(images/fon.png);
+	background-repeat:repeat;
+}
+
+
+.rightimg {
+    float:right; /* Выравнивание по левому краю */
+    margin: 7px -10px -10px 7px; /* Отступы вокруг картинки */
+   }
+
+/*блок сайта*/
+#kvadrat {
+	width:800px; 
+ 	position: relative; 
+    	top: 40px; 
+	margin:0 auto;
+}
+
+/*bio-инфа*/
+.bio {	
+	font-size: 10pt;
+	margin:0 auto;
+	padding: 0;
+	list-style: none;
+	width: 230px; /* the width of the container, change if necessary */
+}
+
+.r-star, 
+.r-star-shape{
+	position:relative;
+	overflow:hidden;
+	padding:10px 0;
+}
+
+.r-star, 
+.r-star-shape .content{
+	background:#88d2fc;
+}
+
+.r-star .content, 
+.r-star-shape .content{
+	padding:10px 20px;
+}
+
+.r-star .cn,
+.r-star-shape .cn{
+	position:absolute;
+	width:20px;
+	height:20px;
+	left:-10px;
+	top:-10px;
+	background:url(images/r-star.png);
+}
+
+.r-star .cn.tr, .r-star .cn.br,
+.r-star-shape .cn.tr, .r-star-shape .cn.br {
+	margin-left:100%;
+}
+
+.r-star .cn.bl, .r-star .cn.br,
+.r-star-shape .cn.bl, .r-star-shape .cn.br {
+	top:auto;
+}
+
+
+
+.r-star-shape .cn{
+	background:url(images/r-star2.png);
+}
+
+.r-star-shape .cn.tl, .r-star-shape .cn.bl {
+	width:100%;
+} 
+
+/*slogan*/
+#slogan {
+	border-bottom: 1px solid #777;
+	margin: 0 auto;
+	padding-left: 15px;
+}
+#slogan .textik {
+	color: #777;
+	font-family:'Trebuchet MS', sans-serif;
+	font-size: 15pt;
+}
+#slogan .textik2 {
+	color: #777;
+	font-family:'Trebuchet MS', sans-serif;
+	font-size: 10pt;
+	float: right;
+	padding: 0 15px 0 0;	
+}
+
+#slogan a {
+	text-decoration: none;
+	color: #777;
+}
+
+#slogan a:hover {
+	text-decoration: underline;
+	color: #88d2fc;
+}
+
+/* footer */
+
+#footer-content {	
+	border-top: 1px solid #777;
+	margin: 40px auto;
+	padding-left: 15px;
+}
+#footer-content a {
+	text-decoration: none;
+	color: #777;
+}
+
+#footer-content a:hover {
+	text-decoration: underline;
+	color: #88d2fc;
+
+}
+#footer-content .col {
+	width: 37%;
+	padding: 5px 5px 30px 0;	
+}
+#footer-content .col2 {
+	padding: 5px 15px 30px 0;	
+}
+
+#footer-content .textik {
+	color: #777;
+	font-family:'Trebuchet MS', sans-serif;
+	font-size: 9pt;	
+}
+
+/* alignment classes */
+.float-left  { float: left; }
+.float-right { float: right; }
+.align-left  { text-align: left; }
+.align-right {	text-align: right; }
+
+
+/* блок с слайд-шоу: начало */
+/*
+	Featured Content Slider
+	by: Chris Coyier
+*/
+.bodyn										{ font-family: Arial, Helvetica, sans-serif; font-size: 10px; }
+											
+					  				  
+/*
+	UTILITY STYLES
+*/				  				  
+					  				  
+.floatLeft 									{ float: left; margin-right: 10px;}
+.floatRight									{ float: right; }
+.clear 										{ clear: both; }
+a											{ outline: none; }
+
+
+/*
+	PAGE STRUCTURE
+*/
+#page-wrap 									{ margin-right: -60px;
+											 }
+
+
+/*
+	TYPOGRAPHY
+*/
+ul									{ list-style: square inside; }
+a, a:visited								{ color: #729dff; text-decoration: none; }
+a:hover, a:active							{ color: white; }
+blockquote									{ padding: 0 20px; margin-left: 20px; border-left: 20px solid #ccc; font-size: 14px; 
+									  		  font-family: Georgia, serif; font-style: italic; margin-top: 10px;}
+
+/*
+	SLIDER
+*/
+.slider-wrap								{ width: 419px;  top: 87px; left: 40px; }			
+.stripViewer .panelContainer 
+.panel ul									{ text-align: left; margin: 0 15px 0 30px; }
+.stripViewer								{ position: relative; overflow: hidden; width: 419px; height: 275px; }
+.stripViewer .panelContainer				{ position: relative; left: 0; top: 0; }
+.stripViewer .panelContainer .panel			{ float: left; height: 100%; position: relative; width: 419px; }
+.stripNavL, .stripNavR, .stripNav			{ display: none; }
+.nav-thumb 									{ border: 1px solid black; margin-right: 5px; }
+#movers-row									{ margin: -43px 0 0 62px; }
+#movers-row div								{ width: 20%; float: left; }
+#movers-row div a.cross-link 				{ float: right; }
+.photo-meta-data							{ background: url(images/transpBlack.png); padding: 10px; height: 30px; 
+											  margin-top: -50px; position: relative; z-index: 9999; color: white; }
+.photo-meta-data span 						{ font-size: 13px; }
+.cross-link									{ display: block; width: 62px; margin-top: -14px; 
+											  position: relative; padding-top: 15px; z-index: 9999; }
+.active-thumb 								{ background: transparent url(images/icon-uparrowsmallwhite.png) top center no-repeat; }
+
+
+
+
+
+
+/* блок с слайд-шоу: конец */
+
+
